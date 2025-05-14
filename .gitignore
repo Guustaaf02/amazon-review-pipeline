@@ -1,0 +1,11 @@
+# Ignora arquivos CSV da pasta data/raw
+data/raw/train.csv
+data/raw/test.csv
+
+
+# Ignorar arquivos temporários e de sistema
+__pycache__/
+*.pyc
+*.ipynb_checkpoints
+.DS_Store
+
