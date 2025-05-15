@@ -19,5 +19,12 @@ ENV PATH=$SPARK_HOME/bin:$PATH
 COPY ../requirements.txt /tmp/
 RUN pip3 install --no-cache-dir -r /tmp/requirements.txt
 
+#Instala o Jupyter Notebook
+RUN pip install notebook
+
+EXPOSE 8888
+
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
+
 # Define diretório de trabalho
 WORKDIR /app

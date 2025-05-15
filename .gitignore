@@ -2,10 +2,17 @@
 data/raw/train.csv
 data/raw/test.csv
 
+*.parquet
+/app/data/
+/data/
+/dataset/
+/parquet/
+
 
 # Ignorar arquivos temporários e de sistema
 __pycache__/
 *.pyc
 *.ipynb_checkpoints
 .DS_Store
-
+.Trash-0
+.ipynb_checkpoints
